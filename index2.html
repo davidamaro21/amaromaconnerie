@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de Navigation</title>
+    <!-- Import de la police depuis Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav role="navigation" aria-label="Menu principal">
+        <div class="logo">
+            <a href="#home"><img src="logo_amaro_maconnerie.png" alt="Logo de l'entreprise"></a>
+        </div>
+
+        <ul class="nav-buttons">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#Realisation">Nos Réalisations</a></li>
+            <li><a href="#a-propos">À propos de Nous</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="contact-btn-wrapper">
+            <button class="contact-btn"><a href="#nous-contacter">Nous demander un devis</a></button>
+        </div>
+    </nav>
+
+    <section class="slideshow">
+        <div class="slide fade">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="text">Construction</div>
+        </div>
+    
+        <div class="slide fade">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="text">Rénovation</div>
+        </div>
+    
+        <div class="slide fade">
+            <img src="image3.jpg" alt="Image 3">
+            <div class="text">Maçonnage</div>
+        </div>
+        
+        <button class="arrow arrow-left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow arrow-right" onclick="changeSlide(1)">&#10095;</button>
+
+    </section>
+
+    <footer>
+        <!-- Logo et contact -->
+        <div class="logo-contact">
+            <img src="logo_amaro_maconnerie.png" alt="Logo">
+            <div class="contact-info">
+                <p><strong>Tél :</strong> +33 1 23 45 67 89</p>
+                <p><strong>Adresse :</strong> 123 Rue Exemple, 75001 Paris, France</p>
+            </div>
+        </div>
+    
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+            <h3>Contactez-nous</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <input type="objet" name="objet" placeholder="Objet" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    
+        <!-- Liens sociaux -->
+        <div class="social-links">
+            <h3>Suivez-nous</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="copyright">
+            &copy; 2024 SARL Amaro Maçonnerie. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="java.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
+
+
